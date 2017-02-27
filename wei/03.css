@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box, .aside, .team, .member {
+    border: solid 1px #999;
+    padding: 20px;
+    background-color: #fff;
+}
+#box {
+    background-color: #eee;
+    overflow: auto;
+}
+.aside {
+    width: 200px;
+    float: left;
+    
+}
+.aside span {
+    position: relative;
+    top: -60px;
+    font-size: 0.9em;
+}
+
+.member {
+    width: 120px;
+    float: right;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 80px;
+    height: 80px;
+    border: solid 1px #999;
+}
+li img {
+    margin-bottom: 10px;
+}
+li:last-child img {
+    margin-bottom: 0;
+}
+
+.team {
+    margin: 0 140px 0 220px;
+    width: auto;
+}
