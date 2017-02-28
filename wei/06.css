@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 940px;
+    height: 1386px;
+    padding: 0 44px;
+}
+ul {
+    list-style: none;
+}
+
+/*页眉*/
+header {
+    height: 60px;
+    border-bottom: solid 2px #938e8c;
+}
+header span {
+    display: inline-block;
+    height: 60px;
+    font-size: 12px;
+    font-family: "SimHei";
+
+}
+header span:first-child {
+    width: 110px;
+    background-color: #D55D5C;
+}
+header span#date {
+    float: right;
+}
+
+/*第一部分*/
+#sec1 img {
+    width: 641px;
+    height: 301px;
+    position: relative;
+}
+#sec1 img:before, #sec1 img:after {
+    content: "";
+    width: 191px;
+    height: 301px;
+    position: absolute;
+    opacity: 0.5;
+}
+#sec1 img:before {
+    top: 0;
+    left: 0;
+    background-color: #285244;
+
+}
+#sec1 img:after {
+    top: 0;
+    right: 0;
+    background-color: #AA6967;
+}
+#sec1 hgroup {
+    width: 203px;
+    border-top: solid 2px #cc8091;
+    float: right;
+    margin-top: 20px;
+}
+#sec1 hgroup span {
+    font-variant: small-caps;
+}
+#sec1 hgroup h2 {
+    font-family: "Microsoft YaHei";
+    font-size: 116px;
+    color: #75b86b;
+    font-style: italic;
+}
+#sec1 .para {
+    width: 200px;
+    float: left;
+    font-size: 12px;
+    color: #231815;
+    font-family: "Microsoft YaHei";
+    margin-right: 16px;
+    opacity: 0.7;
+}
+#sec1 h3 {
+    display: inline-block;
+    width: 200px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#what h3 {
+    color: #418c59;
+}
+#when h3 {
+    color: #d2994f;
+}
+#how h3 {
+    color: #cc7680;
+}
+#how ul {
+    margin-top: 16px
+}
+#how li span {
+    color: #cd4a48;
+    font-style: italic;
+}
+
+/*第二部分*/
+#sec2 {
+    clear: both;
+    padding-top: 50px;
+}
+#sec2 img:first-child {
+    width: 458px;
+    height: 275px;
+    float: right;
+}
+#sec2 img.inset {
+    width: 160px;
+    height: 300px;
+    float: right;
+    margin: 20px;
+}
+
+/*页脚*/
+footer {
+    height: 60px;
+    border-top: solid 2px #938e8c;
+}
+footer span {
+    display: inline-block;
+    height: 60px;
+    font-size: 12px;
+    font-family: "SimHei";
+    color: #d45d5c;
+    float: right;
+}
