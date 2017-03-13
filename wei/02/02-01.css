@@ -66,24 +66,25 @@ table tr {
 table tr:last-child {
 	background-color: #ccc;
 }
-form p {
-	color: #c2c2c2;
-	font-size: 0.8em;
-}
 
-form label:first-child {
+/*表单样式*/
+
+.description {
 	display: inline-block;
 	width: 30%;
 	text-align: right;
 }
+
 form input {
 	text-align: left;
 }
-form span {
+form .caution {
     display: block;
     margin-left: 30%;
     color: #c2c2c2;
+    font-size: 0.8em;
 }
+
 form textarea {
     width: 60%;
 }

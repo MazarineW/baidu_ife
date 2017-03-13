@@ -121,11 +121,76 @@ header span#date {
     float: right;
     margin: 20px;
 }
+#sec2 p {
+    font-size: 12px;
+    font-family: "SimSun";
+    color: #767777;
+}
+.preview {
+    width: 418px;
+    /*height: 278px;*/
+    background-color: #EEEED6;
+    float: right;
+    padding: 20px 20px 0 0;
+    position: relative;
+}
+.preview li {
+    font-size: 16px;
+    font-family: "SimSun";
+    text-align: left;
+    color: #515b5b;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background: url(06-04.png) no-repeat left center;
+}
+.preview li span {
+    font-size: 12px;
+    font-style: italic;
+}
+.preview .color {
+    width: 260px;
+    height: 160px;
+    background-color: #D55D5C;
+    float: left;
+}
+
+.big0 {
+    font-size: 110px;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    display: block;
+    float: left;
+}
+
+.preview p {
+    width: 138px;
+    float: right;
+    font-size: 14px;
+    font-family: "SimHei";
+    color: #515b5b;
+    font-style: italic;
+    line-height: 16px;
+}
+.preview p::before, .preview p::after {
+    font-size: 72px;
+    font-family: "SimHei";
+    color: #d45d5c;
+    font-style: normal;
+    vertical-align: top;
+}
+.preview p::before {
+    content: "“";  
+}
+.preview p::after {
+    content: "”";  
+}
 
 /*页脚*/
 footer {
     height: 60px;
     border-top: solid 2px #938e8c;
+    clear: both;
 }
 footer span {
     display: inline-block;
