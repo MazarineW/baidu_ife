@@ -47,17 +47,60 @@
             C站 / 个人报表 / 文件一 / <span>文档一</span>
         </div>
         <div class="search-area">
-            <input type="button" name="" class="search-btn" value="搜索">
+            <form>
+                <div class="column query-item">
+                    <label>查询项
+                        <select>
+                            <option>第一项</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="column buy-sell">
+                    <label>买方
+                        <select>
+                            <option>小A</option>
+                        </select>
+                    </label>
+                    <label>卖方
+                        <select>
+                            <option>小C</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="column condition">
+                    <label class="date">日期
+                        <input type="date" name="">
+                    </label>
+                    <label class="days">总耗时
+                        <select>
+                            <option>8天</option>
+                        </select>
+                    </label>
+                    <label class="number">人数
+                        <select>
+                            <option>10人</option>
+                        </select>
+                    </label>
+                    <label class="item">成交项
+                        <select>
+                            <option>10项</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <input type="button" name="" class="search-btn" value="搜索">
+            </form>
+            
         </div>
         <div class="price">
             <a href=""><</a>
             <ul>
-                <li class="focus"><span class="time">10:00 am</span><span class="cny">￥1200</span></li>
-                <li><span class="time">11:00 am</span><span class="cny">￥1300</span></li>
-                <li><span class="time">12:00 am</span><span class="cny">￥1200</span></li>
-                <li><span class="time">01:00 pm</span><span class="cny">￥1400</span></li>
-                <li><span class="time">02:00 pm</span><span class="cny">￥1500</span></li>
-                <li><span class="time">03:00 pm</span><span class="cny">￥1800</span></li>
+                <li class="focus"><span class="time">10:00 am</span>￥<span class="cny">1200</span></li>
+                <li><span class="time">11:00 am</span>￥<span class="cny">1300</span></li>
+                <li><span class="time">12:00 am</span>￥<span class="cny">1200</span></li>
+                <li><span class="time">01:00 pm</span>￥<span class="cny">1400</span></li>
+                <li><span class="time">02:00 pm</span>￥<span class="cny">1500</span></li>
+                <li><span class="time">03:00 pm</span>￥<span class="cny">1800</span></li>
             </ul>
             <a href="">></a>
             <a href="" class="history">历史查询</a>
@@ -137,14 +180,194 @@
                 </table>
             </div>
         </div>
-        <div class="area5 board">
+        <div class="apply board">
             <h3>第一组项目</h3>
-            <input type="checkbox" name="" id="confidentiality">
-            <label for="confidentiality">遵守保密协议</label>
-            <input type="button" name="" class="search-btn" value="搜索">
+            <form>
+                <label class="title">标题<input type="text" name="" placeholder="项目报表三"></label>
+                <label class="price">价格<input type="price" name="" placeholder="￥158"></label>
+                <label class="manager">负责人<input type="text" name="" placeholder="小A"></label>
+                <label class="description">详细描述<input type="text" name="" placeholder="该项目目前负责人是……"></label>
+                <label class="confidentiality"><input type="checkbox" name="" checked>遵守保密协议</label>
+                <input type="button" name="" class="search-btn" value="搜索">
+            </form>
         </div>
         <div class="calendar board">
             <h3>日历</h3>
+            <div class="calendar-control">
+                <select>
+                    <option>2016年</option>
+                </select>
+                <select>
+                    <option>4月</option>
+                </select>
+                <select>
+                    <option>标注日期</option>
+                </select>
+                <input type="button" name="" value="返回今天">
+            </div>
+            <div class="calendar-table">
+                <table>
+                    <tr>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th>六</th>
+                        <th>日</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="solar"></span>
+                            <span class="lunar"></span>
+                            </td>
+                        <td>
+                            <span class="solar"></span>
+                            <span class="lunar"></span>
+                            </td>
+                        <td>
+                            <span class="solar"></span>
+                            <span class="lunar"></span>
+                            </td>
+                        <td>
+                            <span class="solar"></span>
+                            <span class="lunar"></span>
+                            </td>
+                        <td>
+                            <span class="solar">1</span>
+                            <span class="lunar festival">愚人节</span>
+                            </td>
+                        <td class="weekend">
+                            <span class="solar">2</span>
+                            <span class="lunar">廿五</span>
+                        </td>
+                        <td class="weekend">
+                            <span class="solar">3</span>
+                            <span class="lunar">廿六</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="solar">4</span>
+                            <span class="lunar">廿七</span>
+                        </td>
+                        <td>
+                            <span class="solar">5</span>
+                            <span class="lunar festival">清明</span>
+                        </td>
+                        <td>
+                            <span class="solar">6</span>
+                            <span class="lunar">廿九</span>
+                        </td>
+                        <td>
+                            <span class="solar">7</span>
+                            <span class="lunar">三月</span>
+                        </td>
+                        <td>
+                            <span class="solar">8</span>
+                            <span class="lunar">初二</span>
+                        </td>
+                        <td class="weekend picked">
+                            <span class="solar">9</span>
+                            <span class="lunar">初三</span>
+                        </td>
+                        <td class="weekend">
+                            <span class="solar">10</span>
+                            <span class="lunar">初四</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="solar">11</span>
+                            <span class="lunar">初五</span>
+                        </td>
+                        <td class="picked">
+                            <span class="solar">12</span>
+                            <span class="lunar">初六</span>
+                        </td>
+                        <td>
+                            <span class="solar">13</span>
+                            <span class="lunar">初七</span>
+                        </td>
+                        <td>
+                            <span class="solar">14</span>
+                            <span class="lunar">初八</span>
+                        </td>
+                        <td>
+                            <span class="solar">15</span>
+                            <span class="lunar">初九</span>
+                        </td>
+                        <td class="weekend">
+                            <span class="solar">16</span>
+                            <span class="lunar">初十</span>
+                        </td>
+                        <td class="weekend">
+                            <span class="solar">17</span>
+                            <span class="lunar">十一</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="solar">18</span>
+                            <span class="lunar">十二</span>
+                        </td>
+                        <td class="picked">
+                            <span class="solar">19</span>
+                            <span class="lunar">十三</span>
+                        </td>
+                        <td>
+                            <span class="solar">20</span>
+                            <span class="lunar">十四</span>
+                        </td>
+                        <td>
+                            <span class="solar">21</span>
+                            <span class="lunar">十五</span>
+                        </td>
+                        <td>
+                            <span class="solar">22</span>
+                            <span class="lunar">十六</span>
+                        </td>
+                        <td class="weekend">
+                            <span class="solar">23</span>
+                            <span class="lunar">十七</span>
+                        </td>
+                        <td class="weekend">
+                            <span class="solar">24</span>
+                            <span class="lunar">十八</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="solar">25</span>
+                            <span class="lunar">十九</span>
+                        </td>
+                        <td>
+                            <span class="solar">26</span>
+                            <span class="lunar">廿十</span>
+                        </td>
+                        <td>
+                            <span class="solar">27</span>
+                            <span class="lunar">廿一</span>
+                        </td>
+                        <td>
+                            <span class="solar">28</span>
+                            <span class="lunar">廿二</span>
+                        </td>
+                        <td>
+                            <span class="solar">29</span>
+                            <span class="lunar">廿三</span>
+                        </td>
+                        <td class="weekend">
+                            <span class="solar">30</span>
+                            <span class="lunar">廿四</span>
+                        </td>
+                        <td class="weekend">
+                            <span class="solar"></span>
+                            <span class="lunar"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="list board">
             <h3>汽车行业品牌榜</h3>

@@ -157,11 +157,74 @@ aside {
     color: #75a0c6;
 }
 .search-area {
-    width: 890px;
-    height: 86px;
+    width: 748px;
+    height: 54px;
     background-color: #fff;
     margin-bottom: 12px;
+    padding: 16px 112px 16px 30px;
+    position: relative;
 }
+
+.search-area .column {
+    display: block;
+    height: 54px;
+    float: left;
+    /*margin-right: 30px;*/
+}
+.search-area label {
+    display: inline-block;
+    height: 24px
+}
+
+.search-area select {
+    appearance: none;
+    height: 24px;
+}
+.search-area .query-item {
+    width: 122px;
+}
+.search-area .buy-sell {
+    width: 188px;
+}
+.search-area .buy-sell label {
+    display: block;
+}
+.search-area .buy-sell label:first-child {
+    margin-bottom: 6px;
+}
+.search-area .buy-sell select {
+    width: 120px;
+}
+.search-area .condition {
+    width: 292px;
+}
+.search-area .date {
+    margin-bottom: 6px;
+    width: 160px;
+}
+.search-area .condition input {
+    width: 120px;
+}
+.search-area .condition .days {
+    margin-bottom: 6px;
+    width: 116px;
+}
+.search-area .condition .days select {
+    width: 70px;
+}
+.search-area .condition .number {
+    width: 110px;
+}
+.search-area .condition .number select {
+    width: 70px;
+}
+.search-area .condition .item {
+    width: 168px;
+}
+.search-area .condition .item select {
+    width: 120px;
+}
+
 .search-area .search-btn {
     width: 50px;
     height: 26px;
@@ -172,8 +235,11 @@ aside {
     border-radius: 5px;
     border: none;
     font-size: 14px;
-    margin: 30px 112px 30px 0;
-    float: right;
+    /*margin: 14px 0;*/
+    /*float: right;*/
+    position: absolute;
+    top: 30px;
+    right: 112px;
 }
 .price {
     width: 890px;
@@ -202,23 +268,28 @@ aside {
     padding-left: 62px;
 }
 .price li {
-    width: 110px;
+    width: 58px;
     height: 56px;
     margin-right: 5px;
     background-color: #fff;
     list-style: none;
-    padding-top: 10px;
     border-top: 4px solid rgba(0, 0, 0, 0);
+    color: #b3b3b3;
+    font-size: 13px;
+    padding: 10px 26px 0;
 }
 .price li.focus {
     border-top: 4px solid #4388c8;
 }
 .price li span {
     display: block;
-    text-align: center;
+}
+.price li span:last-child {
+    display: inline-block;
 }
 .price .time {
     font-size: 12px;
+    color: #000;
 }
 .price .cny {
     font-size: 21px;
@@ -361,11 +432,50 @@ aside {
     background-color: #f4f5f6;
 }
 
-.area5 {
+.apply {
     width: 350px;
     margin-bottom: 10px;
 }
-.area5 .search-btn {
+.apply form {
+    margin: 0 36px;
+    position: relative;
+}
+.apply label {
+    float: left;
+    height: 42px;
+    width: 260px;
+    color: #cccbcb;
+    border-bottom: 1px solid #dadada;
+    line-height: 21px;
+    padding-left: 12px;
+}
+.apply input {
+    display: block;
+    border: none;
+    width: 100%;
+}
+.apply .price {
+    width: 84px;
+    border-right: 1px solid #dadada;
+}
+.apply .manager {
+    width: 160px;
+}
+.apply .description {
+    height: 146px;
+}
+.apply .confidentiality {
+    border: none;
+}
+.apply .confidentiality input {
+    display: inline-block;
+    width: 24px;
+}
+/*.apply input:placeholder {
+    color: #000;
+}*/
+
+.apply .search-btn {
     width: 50px;
     height: 26px;
     text-align: center;
@@ -375,10 +485,59 @@ aside {
     border-radius: 5px;
     border: none;
     font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 254px;
 }
 .calendar {
     width: 350px;
     margin-right: 10px;
+}
+.calendar-control {
+    height: 22px;
+    padding: 10px 0;
+    margin: 0 20px;
+    border-bottom: solid 1px #a9cfec;
+}
+.calendar-control select {
+    width: 66px;
+    height: 20px;
+    margin-right: 8px;
+    border: 1px solid #cbcbcb;
+}
+.calendar-control input {
+    width: 66px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+}
+.calendar-table {
+    margin: 0 20px;
+}
+.calendar-table table {
+    width: 310px;
+    text-align: center;
+    vertical-align: middle;
+}
+.calendar-table tr:first-child {
+    height: 30px;
+    border-bottom: solid 1px #e1e1e1;
+}
+.calendar-table td {
+    width: 40px;
+    height: 40px;
+}
+.calendar-table td span {
+    display: block;
+}
+.calendar-table .weekend .solar{
+    color: #cd3539;
+}
+.calendar-table .festival{
+    color: #d46063;
+}
+.calendar-table .picked {
+    border: solid 1px #f8d564;
 }
 .list {
     width: 530px;
