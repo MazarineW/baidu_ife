@@ -4,6 +4,7 @@
 }
 body {
     width: 1280px;
+    font-size: 12px;
 }
 ul {
     list-style: none;
@@ -14,10 +15,11 @@ a {
 }
 h3 {
     margin: 10px;
+    font-size: 21px;
 }
 .underline {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 .underline:after {
     content: "";
@@ -32,60 +34,72 @@ h3 {
     transform: translateX(-15px);
 }
 header {
-    height: 50px;
+    height: 60px;
+    font-size: 14px;
 }
-header img {
-    height: 50px;
+
+header h2 {
+    font-size: 21px;
+    display: inline-block;
 }
 header ul {
     float: right;
 }
 header li {
     float: left;
-    height: 45px;
+    height: 55px;
     padding: 0 20px;
     text-align: center;
-    border-bottom: 3px solid rgba(222, 80, 79, 0);
+    border-bottom: 5px solid rgba(231, 79, 77, 0);
     font-size: 18px;
-    line-height: 45px;
+    line-height: 55px;
 }
 header li:hover {
-    border-bottom: 3px solid rgba(222, 80, 79, 1);
+    border-bottom: 5px solid rgba(231, 79, 77, 1);
 }
 #login {
-    background: url(07-login.png) no-repeat left center;
+    background: url(images/login.png) no-repeat left center;
     padding-left: 30px;
 }
 
 #hero {
-    background: url(07-hero.jpg) top center;
+    background: url(images/hero.png) no-repeat;
     color: #fff;
-    padding-top: 80px;
+    height: 720px;
+    padding: 220px 0 0 118px;
+
 }
 #hero h2 {
-    margin-left: 80px;
+    font-size: 60px;
 }
 #hero p {
-    margin-left: 80px;
-    width: 200px;
+    width: 300px;
+    font-size: 21px;
 }
 #hero a {
     display: block;
-    width: 200px;
+    width: 332px;
+    height: 64px;
     text-align: center;
-    background-color: #E8504E;
-    padding: 10px;
-    margin: 50px 80px 100px;  
+    background-color: #e7504d;
+    margin: 60px 0 198px;  
+    font-size: 30px;
+    line-height: 64px;
 }
 #hero ul {
     background-color: #fff;
     color: #000;
+    margin-left: -118px;
     margin-bottom: 40px;
+    height: 250px;
+    font-size: 14px;
 }
 #hero li {
     display: inline-block;
-    width: 234px;
-    padding: 0 40px;
+    width: 154px;
+    height: 124px;
+    padding: 0 80px;
+    margin: 40px 0 86px;
     text-align: center;
     position: relative;
 }
@@ -97,7 +111,7 @@ header li:hover {
     background-color: #999;
     position: absolute;
     right: 0;
-    bottom: 20px;
+    bottom: -20px;
 }
 #hero li:last-child:after {
     display: none;
@@ -109,29 +123,36 @@ header li:hover {
 }
 
 #about {
-    background-color: #EDEDED;
+    background-color: #edecec;
     text-align: center;
-    color: #A2A2A2;
-    padding: 30px;
+    color: #a1a1a1;
+    padding: 90px 0 80px;
+    font-size: 53px;
+    height: 190px;
 }
 
 #search {
-    background: url(07-search.jpg) no-repeat top center;
+    background: url(images/map.png) no-repeat top center;
     padding: 30px 50px 80px;
     text-align: center;
     color: #fff;
+    height: 340px;
 }
-#search input {
-    width: 160px;
-    background-color: #BE4F48;
+#search form {
+    margin-top: 50px;
+}
+#search .search-btn {
+    background-color: #bf4f49;
     color: #fff;
     border: none;
-    height: 30px;
+    width: 236px;
+    height: 36px;
 }
 #search select {
     appearance: none;
-    width: 160px;
-    height: 30px;
+    width: 236px;
+    height: 36px;
+    margin-right: 30px;
 }
 /*#search select option {
     background-color: #e3e3e5;
@@ -153,7 +174,8 @@ header li:hover {
 #event img {
     border: inset 1px #dadada;
     padding: 10px;
-    width: 240px;
+    width: 200px;
+    height: 320px;
     margin: 0 auto;
 }
 #event span {
@@ -219,9 +241,16 @@ header li:hover {
     text-align: center;
 }
 #join ul {
-    width: 30%;
+    width: 290px;
     float: left;
-    margin-right: 30px;
+    margin-right: 76px;
+}
+#join li {
+    font-size: 14px;
+    margin-bottom: 38px;
+}
+#join li p {
+    font-size: 12px;
 }
 #join li p:after {
     content: "more";
@@ -230,28 +259,33 @@ header li:hover {
 }
 #join label {
     display: inline-block;
-    width: 350px;
-    background-color: #EDEDEF;
-    margin: 0 10px 10px 0;
-    padding: 10px;
+    width: 274px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ededee;
+    margin: 0 20px 15px 0;
+    padding: 0 18px;
     color: #6b6b6d;
 }
 #join label[for="dream"] {
-    width: 736px;
+    width: 604px;
+    height: 118px;
 }
 #join input {
     border: none;
-    background-color: #EDEDEF;
+    background-color: #ededee;
 }
 #join textarea {
     display: block;
-    width: 700px;
+    width: 100%;
+    border: none;
+    background-color: #ededee;
 }
 #join input[type="submit"] {
-    width: 756px;
-    height: 30px;
+    width: 640px;
+    height: 40px;
     border: none;
-    background-color: #EDEDEF;
+    background-color: #ededee;
 }
 
 #contact {
